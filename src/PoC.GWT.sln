@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoC.GWT", "PoC.GWT\PoC.GWT.csproj", "{7A0CC4B1-E7D1-479B-B889-D7FFC31D2F3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoC.GWT", "PoC.GWT\PoC.GWT.csproj", "{7A0CC4B1-E7D1-479B-B889-D7FFC31D2F3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoC.GWT.Test", "..\PoC.GWT.Test\PoC.GWT.Test.csproj", "{070B0AF5-88CF-42C0-B13B-0843C36EE3E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoC.GWT.Test", "PoC.GWT.Test\PoC.GWT.Test.csproj", "{3296B5FB-B53C-4736-B6D0-6712AD05D55B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7A0CC4B1-E7D1-479B-B889-D7FFC31D2F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A0CC4B1-E7D1-479B-B889-D7FFC31D2F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A0CC4B1-E7D1-479B-B889-D7FFC31D2F3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{070B0AF5-88CF-42C0-B13B-0843C36EE3E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{070B0AF5-88CF-42C0-B13B-0843C36EE3E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{070B0AF5-88CF-42C0-B13B-0843C36EE3E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{070B0AF5-88CF-42C0-B13B-0843C36EE3E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3296B5FB-B53C-4736-B6D0-6712AD05D55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3296B5FB-B53C-4736-B6D0-6712AD05D55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3296B5FB-B53C-4736-B6D0-6712AD05D55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3296B5FB-B53C-4736-B6D0-6712AD05D55B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

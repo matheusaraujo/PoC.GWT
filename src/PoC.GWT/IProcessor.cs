@@ -1,5 +1,6 @@
-﻿using System;
-using PoC.GWT.Domain;
+﻿using PoC.GWT.Domain;
+using System;
+using System.Collections.Generic;
 
 namespace PoC.GWT
 {
@@ -8,5 +9,6 @@ namespace PoC.GWT
         void Insert(Student input);
         void Run();
         Result Select(Guid studentId);
+        IList<Result> SelectAll();
     }
 }

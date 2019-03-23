@@ -1,8 +1,9 @@
-﻿using System;
+﻿using PoC.GWT.Domain;
+using PoC.GWT.Test.GiveWhenThen;
+using PoC.GWT.Test.Scenarios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using PoC.GWT.Domain;
-using PoC.GWT.Test.Scenarios;
 using Xunit;
 
 namespace PoC.GWT.Test.ComposedScenarios

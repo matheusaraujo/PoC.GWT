@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoC.GWT.Test
+namespace PoC.GWT.Test.GiveWhenThen
 {
     public abstract class GiveWhenThen<T1, T2>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PoC.GWT.Test
+namespace PoC.GWT.Test.GiveWhenThen
 {
     public abstract class ComposedGiveWhenThen<T, T1, T2> where T : GiveWhenThen<T1, T2>
     {

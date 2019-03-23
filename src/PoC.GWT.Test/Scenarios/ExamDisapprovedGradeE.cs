@@ -1,6 +1,8 @@
-﻿using System;
-using PoC.GWT.Domain;
+﻿using PoC.GWT.Domain;
+using PoC.GWT.Test.GiveWhenThen;
+using System;
 using Xunit;
+
 
 namespace PoC.GWT.Test.Scenarios
 {

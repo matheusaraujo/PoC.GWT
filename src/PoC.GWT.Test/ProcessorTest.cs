@@ -1,5 +1,6 @@
 using PoC.GWT.Domain;
 using PoC.GWT.Test.ComposedScenarios;
+using PoC.GWT.Test.GiveWhenThen;
 using PoC.GWT.Test.Scenarios;
 using Xunit;
 

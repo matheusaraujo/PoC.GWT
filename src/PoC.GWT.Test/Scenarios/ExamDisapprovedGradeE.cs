@@ -1,41 +1,16 @@
 ﻿using PoC.GWT.Domain;
 using PoC.GWT.Test.GiveWhenThen;
-using System;
-using Xunit;
-
 
 namespace PoC.GWT.Test.Scenarios
 {
-    public class ExamDisapprovedGradeE : GiveWhenThen<Student, Result>
+    public class ExamDisapprovedGradeE : GiveWhenThenStudentResult
     {
-        public override void Give(Action<Student> give)
-        {
-            Input = new Student
-            {
-                Id = Guid.NewGuid(),
-                Name = "Student Exam Disapproved Grade E",
-                Score = 50,
-                ExamScore = 50,
-                Presence = 0.8
-            };
-
-            give.Invoke(Input);
-        }
-
-        public override void When(Action when)
-        {
-            when.Invoke();
-        }
-
-        public override void Then(Func<Guid, Result> then)
-        {
-            var result = then.Invoke(Input.Id);
-            Assert.NotNull(result);
-
-            Assert.Equal(Input.Id, result.StudentId);
-            Assert.Equal(EnumFinalResult.Disapproved, result.FinalResult);
-            Assert.Equal(EnumGrade.E, result.Grade);
-            Assert.Equal(50, result.FinalScore);
-        }
+        protected override string Name => $"Student Exam Disapproved Grade E";
+        protected override double Score => 50;
+        protected override double? ExamScore => 50;
+        protected override double FinalScore => 50;
+        protected override double Presence => 0.8;
+        protected override EnumFinalResult FinalResult => EnumFinalResult.Disapproved;
+        protected override EnumGrade Grade => EnumGrade.E;
     }
 }

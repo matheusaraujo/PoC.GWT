@@ -1,6 +1,6 @@
 using PoC.GWT.Domain;
 using PoC.GWT.Test.ComposedScenarios;
-using PoC.GWT.Test.GiveWhenThen;
+using PoC.GWT.Test.GivenWhenThen;
 using PoC.GWT.Test.Scenarios;
 using Xunit;
 
@@ -8,11 +8,11 @@ namespace PoC.GWT.Test
 {
     public class ProcessorTest
     {
-        private static void Test_Scenario(GiveWhenThen<Student, Result> scenario)
+        private static void Test_Scenario(GivenWhenThen<Student, Result> scenario)
         {
             var processor = new Processor();
 
-            scenario.Give(processor.Insert);
+            scenario.Given(processor.Insert);
             scenario.When(processor.Run);
             scenario.Then(processor.Select);
         }
@@ -23,7 +23,7 @@ namespace PoC.GWT.Test
             var processor = new Processor();
 
             var allScenarios = new AllScenarios();
-            allScenarios.Give(processor.Insert);
+            allScenarios.Given(processor.Insert);
             allScenarios.When(processor.Run);
             allScenarios.Then(processor.SelectAll);
         }

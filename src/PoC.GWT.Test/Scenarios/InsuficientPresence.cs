@@ -1,9 +1,9 @@
 ﻿using PoC.GWT.Domain;
-using PoC.GWT.Test.GiveWhenThen;
+using PoC.GWT.Test.GivenWhenThen;
 
 namespace PoC.GWT.Test.Scenarios
 {
-    public class InsufficientPresence : GiveWhenThenStudentResult
+    public class InsufficientPresence : GivenWhenThenStudentResult
     {
         protected override string Name => $"Student Insufficient Presence";
         protected override double Score => 80;

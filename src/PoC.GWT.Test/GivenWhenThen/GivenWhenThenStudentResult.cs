@@ -2,12 +2,11 @@
 using PoC.GWT.Domain;
 using Xunit;
 
-namespace PoC.GWT.Test.GiveWhenThen
+namespace PoC.GWT.Test.GivenWhenThen
 {
-    public abstract class GiveWhenThenStudentResult : GiveWhenThen<Student, Result>
+    public abstract class GivenWhenThenStudentResult : GivenWhenThen<Student, Result>
     {
-
-        public GiveWhenThenStudentResult()
+        protected GivenWhenThenStudentResult()
         {
             Id = Guid.NewGuid();
         }
@@ -28,7 +27,7 @@ namespace PoC.GWT.Test.GiveWhenThen
 
         protected abstract EnumGrade Grade { get; }
 
-        public override void Give(Action<Student> give)
+        public override void Given(Action<Student> given)
         {
             Input = new Student
             {
@@ -39,7 +38,7 @@ namespace PoC.GWT.Test.GiveWhenThen
                 Presence = Presence
             };
 
-            give.Invoke(Input);
+            given.Invoke(Input);
         }
 
         public override void When(Action when)

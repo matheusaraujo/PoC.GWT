@@ -1,5 +1,5 @@
 ﻿using PoC.GWT.Domain;
-using PoC.GWT.Test.GiveWhenThen;
+using PoC.GWT.Test.GivenWhenThen;
 using PoC.GWT.Test.Scenarios;
 using System;
 using System.Collections.Generic;
@@ -8,11 +8,11 @@ using Xunit;
 
 namespace PoC.GWT.Test.ComposedScenarios
 {
-    public class AllScenarios : ComposedGiveWhenThen<GiveWhenThen<Student, Result>, Student, Result>
+    public class AllScenarios : ComposedGivenWhenThen<GivenWhenThen<Student, Result>, Student, Result>
     {
         public AllScenarios()
         {
-            Scenarios = new List<GiveWhenThen<Student, Result>>
+            Scenarios = new List<GivenWhenThen<Student, Result>>
             {
                 new GradeA(),
                 new GradeB(),
@@ -26,10 +26,10 @@ namespace PoC.GWT.Test.ComposedScenarios
             };
         }
 
-        public override void Give(Action<Student> give)
+        public override void Given(Action<Student> given)
         {
             foreach (var scenario in Scenarios)
-                scenario.Give(give);
+                scenario.Given(given);
         }
 
         public override void When(Action when)

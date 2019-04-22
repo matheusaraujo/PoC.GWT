@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PoC.GWT.Test.GiveWhenThen
+namespace PoC.GWT.Test.GivenWhenThen
 {
-    public abstract class ComposedGiveWhenThen<T, T1, T2> where T : GiveWhenThen<T1, T2>
+    public abstract class ComposedGivenWhenThen<T, T1, T2> where T : GivenWhenThen<T1, T2>
     {
         protected IList<T> Scenarios;
-        public abstract void Give(Action<T1> give);
+        public abstract void Given(Action<T1> given);
         public abstract void When(Action when);
         public abstract void Then(Func<IList<T2>> then);
     }

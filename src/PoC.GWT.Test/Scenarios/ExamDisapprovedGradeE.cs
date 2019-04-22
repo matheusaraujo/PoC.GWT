@@ -1,9 +1,9 @@
 ﻿using PoC.GWT.Domain;
-using PoC.GWT.Test.GiveWhenThen;
+using PoC.GWT.Test.GivenWhenThen;
 
 namespace PoC.GWT.Test.Scenarios
 {
-    public class ExamDisapprovedGradeE : GiveWhenThenStudentResult
+    public class ExamDisapprovedGradeE : GivenWhenThenStudentResult
     {
         protected override string Name => $"Student Exam Disapproved Grade E";
         protected override double Score => 50;
